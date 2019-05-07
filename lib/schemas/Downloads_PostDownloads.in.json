@@ -1,0 +1,64 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "auto_download": {
+            "required": false,
+            "type": "boolean"
+        },
+        "file_type": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "eps",
+                "jpg"
+            ]
+        },
+        "height": {
+            "required": false,
+            "type": "string"
+        },
+        "product_id": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "product_type": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "easyaccess",
+                "editorialsubscription",
+                "imagepack",
+                "premiumaccess",
+                "royaltyfreesubscription"
+            ]
+        },
+        "use_team_credits": {
+            "required": false,
+            "type": "boolean"
+        },
+        "requestBody": {
+            "properties": {
+                "download_notes": {
+                    "type": "string"
+                },
+                "project_code": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

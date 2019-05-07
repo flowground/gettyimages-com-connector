@@ -1,0 +1,45 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "auto_download": {
+            "required": false,
+            "type": "boolean"
+        },
+        "product_id": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "size": {
+            "required": false,
+            "type": "string"
+        },
+        "use_team_credits": {
+            "required": false,
+            "type": "boolean"
+        },
+        "requestBody": {
+            "properties": {
+                "download_notes": {
+                    "type": "string"
+                },
+                "project_code": {
+                    "type": "string"
+                }
+            },
+            "type": "object"
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

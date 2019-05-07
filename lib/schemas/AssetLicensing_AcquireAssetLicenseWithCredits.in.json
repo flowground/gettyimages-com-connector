@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        },
+        "assetId": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "properties": {
+                "LicenseTypes": {
+                    "items": {
+                        "enum": [
+                            "Multiseat",
+                            "Unlimited",
+                            "Resale",
+                            "Indemnification"
+                        ],
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "UseTeamCredits": {
+                    "description": "Defaults to false.",
+                    "type": "boolean"
+                }
+            },
+            "required": [
+                "LicenseTypes"
+            ],
+            "type": "object"
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

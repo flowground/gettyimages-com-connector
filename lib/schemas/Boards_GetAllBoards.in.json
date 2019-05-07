@@ -1,0 +1,41 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        },
+        "board_relationship": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "owned",
+                "invited"
+            ]
+        },
+        "page": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "pageSize": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "sort_order": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "date_last_updated_descending",
+                "date_last_updated_ascending",
+                "name_ascending",
+                "name_decending"
+            ]
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

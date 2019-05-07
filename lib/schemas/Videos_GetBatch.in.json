@@ -1,0 +1,66 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": false,
+            "type": "string"
+        },
+        "ids": {
+            "required": true,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "id",
+                    "allowed_use",
+                    "artist",
+                    "asset_family",
+                    "call_for_image",
+                    "caption",
+                    "clip_length",
+                    "collection_code",
+                    "collection_id",
+                    "collection_name",
+                    "color_type",
+                    "copyright",
+                    "comp",
+                    "date_created",
+                    "date_submitted",
+                    "detail_set",
+                    "display_set",
+                    "download_sizes",
+                    "downloads",
+                    "era",
+                    "editorial_segments",
+                    "entity_details",
+                    "keywords",
+                    "license_model",
+                    "mastered_to",
+                    "originally_shot_on",
+                    "object_name",
+                    "preview",
+                    "product_types",
+                    "referral_destinations",
+                    "shot_speed",
+                    "source",
+                    "summary_set",
+                    "thumb",
+                    "title",
+                    "istock_licenses",
+                    "istock_collection"
+                ],
+                "type": "string"
+            }
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

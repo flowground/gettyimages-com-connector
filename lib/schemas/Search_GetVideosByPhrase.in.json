@@ -1,0 +1,228 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": false,
+            "type": "string"
+        },
+        "age_of_people": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "newborn",
+                    "baby",
+                    "child",
+                    "teenager",
+                    "young_adult",
+                    "adult",
+                    "adults_only",
+                    "mature_adult",
+                    "senior_adult",
+                    "0-1_months",
+                    "2-5_months",
+                    "6-11_months",
+                    "12-17_months",
+                    "18-23_months",
+                    "2-3_years",
+                    "4-5_years",
+                    "6-7_years",
+                    "8-9_years",
+                    "10-11_years",
+                    "12-13_years",
+                    "14-15_years",
+                    "16-17_years",
+                    "18-19_years",
+                    "20-24_years",
+                    "20-29_years",
+                    "25-29_years",
+                    "30-34_years",
+                    "30-39_years",
+                    "35-39_years",
+                    "40-44_years",
+                    "40-49_years",
+                    "45-49_years",
+                    "50-54_years",
+                    "50-59_years",
+                    "55-59_years",
+                    "60-64_years",
+                    "60-69_years",
+                    "65-69_years",
+                    "70-79_years",
+                    "80-89_years",
+                    "90_plus_years",
+                    "100_over"
+                ],
+                "type": "string"
+            }
+        },
+        "collection_codes": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "collections_filter_type": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "include",
+                "exclude"
+            ]
+        },
+        "editorial_video_types": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "raw",
+                    "produced"
+                ],
+                "type": "string"
+            }
+        },
+        "fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "allowed_use",
+                    "artist",
+                    "asset_family",
+                    "call_for_image",
+                    "caption",
+                    "clip_length",
+                    "collection_code",
+                    "collection_id",
+                    "collection_name",
+                    "color_type",
+                    "comp",
+                    "copyright",
+                    "date_created",
+                    "date_submitted",
+                    "detail_set",
+                    "display_set",
+                    "download_sizes",
+                    "editorial_segments",
+                    "entity_details",
+                    "era",
+                    "id",
+                    "istock_collection",
+                    "keywords",
+                    "largest_downloads",
+                    "license_model",
+                    "mastered_to",
+                    "originally_shot_on",
+                    "object_name",
+                    "preview",
+                    "product_types",
+                    "referral_destinations",
+                    "shot_speed",
+                    "source",
+                    "summary_set",
+                    "thumb",
+                    "title",
+                    "istock_licenses"
+                ],
+                "type": "string"
+            }
+        },
+        "format_available": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "sd",
+                "hd",
+                "4k"
+            ]
+        },
+        "frame_rates": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "23.98",
+                    "24",
+                    "25",
+                    "29.97",
+                    "30",
+                    "50",
+                    "59.94",
+                    "60"
+                ],
+                "type": "string"
+            }
+        },
+        "keyword_ids": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "format": "int32",
+                "type": "integer"
+            }
+        },
+        "license_models": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "rightsready",
+                    "royaltyfree"
+                ],
+                "type": "string"
+            }
+        },
+        "page": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "page_size": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "phrase": {
+            "required": false,
+            "type": "string"
+        },
+        "product_types": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "release_status": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "release_not_important",
+                "fully_released"
+            ]
+        },
+        "sort_order": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "best_match",
+                "most_popular",
+                "newest",
+                "oldest",
+                "random"
+            ]
+        },
+        "specific_people": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

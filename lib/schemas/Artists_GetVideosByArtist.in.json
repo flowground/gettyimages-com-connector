@@ -1,0 +1,48 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": false,
+            "type": "string"
+        },
+        "artist_name": {
+            "required": true,
+            "type": "string"
+        },
+        "fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "id",
+                    "alternative_ids",
+                    "asset_family",
+                    "asset_type",
+                    "caption",
+                    "collection_code",
+                    "collection_name",
+                    "comp",
+                    "date_submitted",
+                    "keywords",
+                    "license_model",
+                    "title"
+                ],
+                "type": "string"
+            }
+        },
+        "page": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "page_size": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

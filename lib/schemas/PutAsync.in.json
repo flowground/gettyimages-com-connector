@@ -1,0 +1,44 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "requestBody": {
+            "description": "Specifies the request information for the Batch Usages endpoint.",
+            "properties": {
+                "asset_usages": {
+                    "description": "Identifies the list of asset id, usage count and date of usage combinations to record.",
+                    "items": {
+                        "description": "Specifies the id, usage Quantity, and date of when an asset was used.",
+                        "properties": {
+                            "asset_id": {
+                                "description": "Specifies the Id of the asset that was used.",
+                                "type": "string"
+                            },
+                            "quantity": {
+                                "description": "Specifies the number of times the asset was used.",
+                                "format": "int32",
+                                "type": "integer"
+                            },
+                            "usage_date": {
+                                "description": "Identifies the date the asset was used, in ISO 8601 format (e.g., YYYY-MM-DD), time is not needed.",
+                                "format": "date-time",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array",
+                    "uniqueItems": false
+                }
+            },
+            "type": "object"
+        }
+    }
+}

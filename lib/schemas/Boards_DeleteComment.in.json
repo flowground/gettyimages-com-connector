@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        },
+        "board_id": {
+            "required": true,
+            "type": "string"
+        },
+        "comment_id": {
+            "required": true,
+            "type": "string"
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,39 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": false,
+            "type": "string"
+        },
+        "fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "id",
+                    "child_event_count",
+                    "editorial_segments",
+                    "hero_image",
+                    "image_count",
+                    "location",
+                    "name",
+                    "start_date",
+                    "type"
+                ],
+                "type": "string"
+            }
+        },
+        "ids": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "format": "int32",
+                "type": "integer"
+            }
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": false,
+            "type": "string"
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

@@ -1,0 +1,74 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": false,
+            "type": "string"
+        },
+        "id": {
+            "required": true,
+            "type": "string"
+        },
+        "fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "allowed_use",
+                    "alternative_ids",
+                    "artist",
+                    "artist_title",
+                    "asset_family",
+                    "call_for_image",
+                    "caption",
+                    "city",
+                    "collection_code",
+                    "collection_id",
+                    "collection_name",
+                    "color_type",
+                    "comp",
+                    "copyright",
+                    "country",
+                    "credit_line",
+                    "date_camera_shot",
+                    "date_created",
+                    "date_submitted",
+                    "detail_set",
+                    "display_set",
+                    "download_sizes",
+                    "downloads",
+                    "editorial_segments",
+                    "editorial_source",
+                    "entity_details",
+                    "event_ids",
+                    "graphical_style",
+                    "id",
+                    "istock_collection",
+                    "istock_licenses",
+                    "keywords",
+                    "largest_downloads",
+                    "license_model",
+                    "links",
+                    "max_dimensions",
+                    "object_name",
+                    "orientation",
+                    "people",
+                    "preview",
+                    "product_types",
+                    "quality_rank",
+                    "referral_destinations",
+                    "state_province",
+                    "summary_set",
+                    "thumb",
+                    "title",
+                    "uri_oembed"
+                ],
+                "type": "string"
+            }
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

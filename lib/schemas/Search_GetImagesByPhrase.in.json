@@ -1,0 +1,326 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": false,
+            "type": "string"
+        },
+        "age_of_people": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "newborn",
+                    "baby",
+                    "child",
+                    "teenager",
+                    "young_adult",
+                    "adult",
+                    "adults_only",
+                    "mature_adult",
+                    "senior_adult",
+                    "0-1_months",
+                    "2-5_months",
+                    "6-11_months",
+                    "12-17_months",
+                    "18-23_months",
+                    "2-3_years",
+                    "4-5_years",
+                    "6-7_years",
+                    "8-9_years",
+                    "10-11_years",
+                    "12-13_years",
+                    "14-15_years",
+                    "16-17_years",
+                    "18-19_years",
+                    "20-24_years",
+                    "20-29_years",
+                    "25-29_years",
+                    "30-34_years",
+                    "30-39_years",
+                    "35-39_years",
+                    "40-44_years",
+                    "40-49_years",
+                    "45-49_years",
+                    "50-54_years",
+                    "50-59_years",
+                    "55-59_years",
+                    "60-64_years",
+                    "60-69_years",
+                    "65-69_years",
+                    "70-79_years",
+                    "80-89_years",
+                    "90_plus_years",
+                    "100_over"
+                ],
+                "type": "string"
+            }
+        },
+        "artists": {
+            "required": false,
+            "type": "string"
+        },
+        "collection_codes": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "collections_filter_type": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "include",
+                "exclude"
+            ]
+        },
+        "color": {
+            "required": false,
+            "type": "string"
+        },
+        "compositions": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "abstract",
+                    "candid",
+                    "close_up",
+                    "copy_space",
+                    "cut_out",
+                    "full_frame",
+                    "full_length",
+                    "headshot",
+                    "looking_at_camera",
+                    "macro",
+                    "portrait",
+                    "sparse",
+                    "still_life",
+                    "three_quarter_length",
+                    "waist_up"
+                ],
+                "type": "string"
+            }
+        },
+        "embed_content_only": {
+            "required": false,
+            "type": "boolean"
+        },
+        "ethnicity": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "black",
+                    "caucasian",
+                    "east_asian",
+                    "hispanic_latino",
+                    "japanese",
+                    "middle_eastern",
+                    "mixed_race_person",
+                    "multiethnic_group",
+                    "native_american_first_nations",
+                    "pacific_islander",
+                    "south_asian",
+                    "southeast_asian"
+                ],
+                "type": "string"
+            }
+        },
+        "event_ids": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "format": "int32",
+                "type": "integer"
+            }
+        },
+        "exclude_nudity": {
+            "required": false,
+            "type": "boolean"
+        },
+        "fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "accessrestriction",
+                    "allowed_use",
+                    "alternative_ids",
+                    "artist",
+                    "asset_family",
+                    "call_for_image",
+                    "caption",
+                    "collection_code",
+                    "collection_id",
+                    "collection_name",
+                    "color_type",
+                    "comp",
+                    "copyright",
+                    "date_camera_shot",
+                    "date_created",
+                    "date_submitted",
+                    "detail_set",
+                    "display_set",
+                    "download_sizes",
+                    "editorial_segments",
+                    "editorial_source",
+                    "entity_details",
+                    "event_ids",
+                    "graphical_style",
+                    "id",
+                    "istock_collection",
+                    "keywords",
+                    "largest_downloads",
+                    "license_model",
+                    "max_dimensions",
+                    "orientation",
+                    "people",
+                    "preview",
+                    "product_types",
+                    "quality_rank",
+                    "referral_destinations",
+                    "summary_set",
+                    "thumb",
+                    "title",
+                    "uri_oembed"
+                ],
+                "type": "string"
+            }
+        },
+        "file_types": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "eps",
+                    "jpg"
+                ],
+                "type": "string"
+            }
+        },
+        "graphical_styles": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "fine_art",
+                    "illustration",
+                    "photography",
+                    "vector"
+                ],
+                "type": "string"
+            }
+        },
+        "graphical_styles_filter_type": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "include",
+                "exclude"
+            ]
+        },
+        "keyword_ids": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "format": "int32",
+                "type": "integer"
+            }
+        },
+        "license_models": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "rightsmanaged",
+                    "royaltyfree"
+                ],
+                "type": "string"
+            }
+        },
+        "minimum_size": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "x_small",
+                "small",
+                "medium",
+                "large",
+                "x_large",
+                "xx_large",
+                "vector"
+            ]
+        },
+        "number_of_people": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "none",
+                    "one",
+                    "two",
+                    "group"
+                ],
+                "type": "string"
+            }
+        },
+        "orientations": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "Horizontal",
+                    "Vertical",
+                    "Square",
+                    "PanoramicHorizontal",
+                    "PanoramicVertical"
+                ],
+                "type": "string"
+            }
+        },
+        "page": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "page_size": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "phrase": {
+            "required": false,
+            "type": "string"
+        },
+        "product_types": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "sort_order": {
+            "required": false,
+            "type": "string",
+            "enum": [
+                "best_match",
+                "most_popular",
+                "newest",
+                "random"
+            ]
+        },
+        "specific_people": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

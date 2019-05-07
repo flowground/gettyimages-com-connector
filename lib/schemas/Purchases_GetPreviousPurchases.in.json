@@ -1,0 +1,33 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": true,
+            "type": "string"
+        },
+        "date_from": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "date_to": {
+            "required": false,
+            "type": "string",
+            "format": "date-time"
+        },
+        "page": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "page_size": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}

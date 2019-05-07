@@ -1,0 +1,101 @@
+{
+    "type": "object",
+    "properties": {
+        "Authorization": {
+            "required": false,
+            "type": "string"
+        },
+        "facet_fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "artists",
+                    "locations"
+                ],
+                "type": "string"
+            }
+        },
+        "facet_max_count": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "fields": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "enum": [
+                    "allowed_use",
+                    "alternative_ids",
+                    "artist",
+                    "asset_family",
+                    "call_for_image",
+                    "caption",
+                    "collection_code",
+                    "collection_id",
+                    "collection_name",
+                    "color_type",
+                    "comp",
+                    "copyright",
+                    "date_camera_shot",
+                    "date_created",
+                    "date_submitted",
+                    "detail_set",
+                    "display_set",
+                    "download_sizes",
+                    "graphical_style",
+                    "id",
+                    "istock_collection",
+                    "keywords",
+                    "largest_downloads",
+                    "license_model",
+                    "max_dimensions",
+                    "orientation",
+                    "preview",
+                    "product_types",
+                    "quality_rank",
+                    "referral_destinations",
+                    "summary_set",
+                    "thumb",
+                    "title",
+                    "uri_oembed"
+                ],
+                "type": "string"
+            }
+        },
+        "image_fingerprint": {
+            "required": false,
+            "type": "string"
+        },
+        "image_url": {
+            "required": false,
+            "type": "string"
+        },
+        "include_facets": {
+            "required": false,
+            "type": "boolean"
+        },
+        "page": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "page_size": {
+            "required": false,
+            "type": "integer",
+            "format": "int32"
+        },
+        "product_types": {
+            "required": false,
+            "type": "array",
+            "items": {
+                "type": "string"
+            }
+        },
+        "Accept_Language": {
+            "required": false,
+            "type": "string"
+        }
+    }
+}
